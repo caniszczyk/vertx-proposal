@@ -1,0 +1,235 @@
+<!-- 
+	This document is provided as a template along with some guidance for creating
+	your project proposal. This is just a template. Feel free to change it as
+	you see fit (add sections, remove section). We feel, however, that the
+	suggestions represented in this document represent the reasonable minimum
+	amount of information to move forward.
+	
+	Please keep the formatting in this document simple. Please do not edit 
+	this document in Microsoft Word as it adds huge piles of markup that make
+	it difficult to restyle.
+	
+	More information is available here:
+	
+	http://wiki.eclipse.org/Development_Resources/HOWTO/Pre-Proposal_Phase
+	
+	Direct any questions about this template to emo@eclipse.org
+ -->
+
+<html>
+<head>
+
+<!-- 
+	Include the title here. We will parse it out of here and include it on the
+	rendered webpage. Do not duplicate the title within the text of your page.
+ -->
+
+<title>vert.x</title>
+</head>
+
+<style>
+dt {
+display: list-item;
+list-style-position:outside;
+list-style-image:url(/eclipse.org-common/themes/Phoenix/images/arrow.gif);
+margin-left:16px;
+}
+dd {
+margin-left:25px;
+margin-bottom:5px;
+}
+</style>
+
+<body>
+<p>The vert.x project is a proposed open source project under the <a
+	href="http://www.eclipse.org/projects/project_summary.php?projectid=technology">Technology Project</a>.</p>
+
+<!-- 
+	The communication channel must be specified. Typically, this is the
+	"Proposals" forum. In general, you don't need to change this.
+ -->
+<p>This proposal is in the Project Proposal Phase (as defined in the
+Eclipse Development Process) and is written to declare its intent and
+scope. We solicit additional participation and input from the Eclipse
+community. Please send all feedback to the 
+<a href="http://www.eclipse.org/forums/eclipse.proposals">Eclipse Proposals</a>
+Forum.</p>
+
+<h2>Background</h2>
+
+<!-- 
+	Optionally provide the background that has lead you to creating this project.
+ -->
+
+<p>
+Vert.x is the framework for the next generation of asynchronous, effortlessly scalable, concurrent applications.
+</p>
+<p>
+TODO talk about vert.x history 
+</p>
+
+<h2>Scope</h2>
+
+<p>
+Vert.x is an event driven application framework that runs on the JVM - a run-time with real concurrency and unrivalled performance. Vert.x then exposes the API in Ruby, Java, Groovy, JavaScript and Python. So you choose what language you want to use.
+</p>
+
+<p>
+Future applications will largely be running on mobile and embedded devices. These demand a platform that can scale with 10s, 100s or even millions of concurrent connections, and allow developers to write scalable, performant applications for them incredibly easily, in whatever language they prefer.
+</p>
+
+<p>
+We believe Vert.x is that platform.
+</p>
+
+<h2>Description</h2>
+
+<!-- 
+	Describe the project here. Be concise, but provide enough information that
+	somebody who doesn't already know very much about your project idea or domain
+	has at least a fighting chance of understanding its purpose.
+ -->
+
+<p>
+Vert.x is the framework for the next generation of asynchronous, effortlessly scalable, concurrent applications.
+</p>
+
+<ul>
+<li>Vert.x is polyglot. Write your application components in JavaScript, Ruby, Groovy, Java or Python. It's up to you. Or mix and match several programming languages in a single application.</li>
+<li>Vert.x has a super simple concurrency model. Vert.x allows you to write all your code as single threaded, freeing you from the hassle of multi-threaded programming. (No more synchronized, volatile or explicit locking).</li>
+<li>Unlike other popular event driven frameworks, Vert.x takes advantage of the JVM and scales seamlessly over available cores without having to manually fork multiple servers and handle inter process communication between them.</li>
+<li>Vert.x has a simple, asynchronous programming model for writing truly scalable non-blocking applications.</li>
+<li>Vert.x includes a distributed event bus that spans the client and server side so your applications components can communicate incredibly easily. The event bus even penetrates into in-browser JavaScript allowing you to create effortless so-called real-time web applications.</li>
+<li>Vert.x provides real power and simplicity, without being simplistic. No more sprawling xml configuration files.</li>
+<li>Vert.x includes a module system and public module repository, so you can easily re-use and share Vert.x modules with others.</li>
+</ul>
+ 
+<h2>Why Eclipse?</h2> 
+
+<!-- 
+	Answer these two questions:	What value does this project bring to the Eclipse
+	community? What value do you expect to obtain from hosting your project at Eclipse?
+	
+	What value do you get by having your project at Eclipse over and above the value
+	of hosting at Eclipse Labs?
+ -->
+
+<p>
+TODO
+</p>
+
+<h2>Initial Contribution</h2>
+
+<!-- 
+	Projects are expected to arrive at Eclipse with existing code.
+	
+	Describe the existing code that will be contributed to the project. Please provide
+	a couple of paragraphs describing the code with modest detail, including important
+	information like code ownership (who holds the copyright?), and some consideration
+	of community that exists around the code. Include a listing of third-party libraries 
+	and associated licenses.
+ -->
+ 
+<h2>Legal Issues</h2>
+
+<!-- 
+	Please describe any potential legal issues in this section. Does somebody else
+	own the trademark to the project name? Is there some issue that prevents you
+	from licensing the project under the Eclipse Public License? Are parts of the 
+	code available under some other license? Are there any LGPL/GPL bits that you
+	absolutely require?
+ -->
+
+<p>
+Talk about VMWare project history etc...
+</p>
+
+<p>
+VMWare is transfering the existing trademark to the Eclipse Foundation.
+</p>
+ 
+<h2>Committers</h2>
+
+<!-- 
+	List any initial committers that should be provisioned along with the
+	new project. Include affiliation, but do not include email addresses at
+	this point.
+ -->
+
+<p>The following individuals are proposed as initial committers to the project:</p>
+
+<ul>
+        <li>Tim Fox, Red Hat (lead)</li>
+        <li>Somebody else, Affiliation</li>
+</ul>
+
+<p>We welcome additional committers and contributions.</p>
+
+<!-- 
+	Describe any initial contributions of code that will be brought to the 
+	project. If there is no existing code, just remove this section.
+ -->
+
+<h2>Mentors</h2>
+
+<!-- 
+	New Eclipse projects require a minimum of two mentors from the Architecture
+	Council. You need to identify two mentors before the project is created. The
+	proposal can be posted before this section is filled in (it's a little easier
+	to find a mentor when the proposal itself is public).
+ -->
+
+<p>The following Architecture Council members will mentor this
+project:</p>
+
+<ul>
+	<li>Chris Aniszczyk</li>
+	<li>Mentor 2</li>
+</ul>
+
+<h2>Interested Parties</h2>
+
+<!-- 
+	Provide a list of individuals, organisations, companies, and other Eclipse
+	projects that are interested in this project. This list will provide some
+	insight into who your project's community will ultimately include. Where
+	possible, include affiliations. Do not include email addresses.
+ -->
+
+<p>The following individuals, organisations, companies and projects have 
+expressed interest in this project:</p>
+
+<ul>
+	<li>Chris Aniszczyk, Twitter</li>
+	<li>Somebody else, Affiliation</li>
+</ul>
+
+<h2>Project Scheduling</h2>
+
+<!-- 
+	Describe, in rough terms, what the basic scheduling of the project will
+	be. You might, for example, include an indication of when an initial contribution
+	should be expected, when your first build will be ready, etc. Exact
+	dates are not required.
+ -->
+
+<h2>Changes to this Document</h2>
+
+<!-- 
+	List any changes that have occurred in the document here.
+	You only need to document changes that have occurred after the document
+	has been posted live for the community to view and comment.
+ -->
+
+<table>
+	<tr>
+		<th>Date</th>
+		<th>Change</th>
+	</tr>
+	<tr>
+		<td>22-01-2013</td>
+		<td>Document created</td>
+	</tr>
+</table>
+</body>
+</html>
