@@ -24,7 +24,7 @@
 	rendered webpage. Do not duplicate the title within the text of your page.
  -->
 
-<title>vert.x</title>
+<title>Vert.x</title>
 </head>
 
 <style>
@@ -41,7 +41,7 @@ margin-bottom:5px;
 </style>
 
 <body>
-<p>The vert.x project is a proposed open source project under the <a
+<p>The Vert.x project is a proposed open source project under the <a
 	href="http://www.eclipse.org/projects/project_summary.php?projectid=technology">Technology Project</a>.</p>
 
 <!-- 
@@ -64,22 +64,32 @@ Forum.</p>
 <p>
 Vert.x is the framework for the next generation of asynchronous, effortlessly scalable, concurrent applications.
 </p>
-<p>
-TODO talk about vert.x history 
-</p>
+<p>Vert.x was started in June 2011 by Tim Fox in his spare time while he was working at VMware. The inspiration for the project came from two main areas:</p>
+<ol>
+  <li>The growing interest in non blocking, asynchronous approaches to application design motivated by scalability.</li>
+  <li>The recent trend towards stripped down simplicity in APIs and a rejection of complexity that had dominated application platforms
+    in the previous 10 or more years.</li>
+</ol>
+<p>In particular the project was influenced by Node.js which was getting a lot of attention at the time. There was nothing similar
+  for the JVM and the idea was formed to create a project superficially similar to Node.js but running on the JVM, and which
+  could leverage the superior virtual machine. Since the JVM also supported multiple languages (unlike V8) the idea was the user could choose
+  from multiple languages in which to code their application.</p>
+<p>After some months of working on Vert.x in his spare time, Tim Fox persuade VMware to allow him to work on it as his main work.</p>
+<p>Initially the project was named 'Node.x' - the 'x' representing the fact that the platform was polyglot, but Fox pre-emptively renamed it
+  a few months later in order to avoid any potential future trademark issues with Joyent who own the Node.js trademark.
+  The new name chosen was Vert.x (pronounced 'Vertex') - again the .x representing the polyglot nature of the project, and a vertex is
+  of course a synonym for a node.</p>
+<p>The latest release of Vert.x is 1.3.1, and there is a healthy and growing community. Vert.x has attracted a lot of attention so far
+and is currently <a href="https://github.com/languages/Java/most_watched">one of the most followed Java projects on github</a>
+<p>Work has already started on Vert.x 2.0 which aims to improve the platform in multiple areas and take the project to
+the next level.</p>
 
-<h2>Scope</h2>
+<p>The purpose of the project is to provide a complete general purpose platform for web and enterprise applications.</p>
 
 <p>
-Vert.x is an event driven application framework that runs on the JVM - a run-time with real concurrency and unrivalled performance. Vert.x then exposes the API in Ruby, Java, Groovy, JavaScript and Python. So you choose what language you want to use.
-</p>
-
-<p>
-Future applications will largely be running on mobile and embedded devices. These demand a platform that can scale with 10s, 100s or even millions of concurrent connections, and allow developers to write scalable, performant applications for them incredibly easily, in whatever language they prefer.
-</p>
-
-<p>
-We believe Vert.x is that platform.
+Future applications will largely be running on mobile and embedded devices. These demand a platform that can scale
+with 10s, 100s or even millions of concurrent connections, and allow developers to write scalable, performant applications
+  for them incredibly easily, in whatever language they prefer.
 </p>
 
 <h2>Description</h2>
@@ -91,20 +101,30 @@ We believe Vert.x is that platform.
  -->
 
 <p>
-Vert.x is the framework for the next generation of asynchronous, effortlessly scalable, concurrent applications.
+Vert.x is a general purpose platform for the new generation of asynchronous, scalable, concurrent applications.
 </p>
 
 <ul>
-<li>Vert.x is polyglot. Write your application components in JavaScript, Ruby, Groovy, Java or Python. It's up to you. Or mix and match several programming languages in a single application.</li>
-<li>Vert.x has a super simple concurrency model. Vert.x allows you to write all your code as single threaded, freeing you from the hassle of multi-threaded programming. (No more synchronized, volatile or explicit locking).</li>
-<li>Unlike other popular event driven frameworks, Vert.x takes advantage of the JVM and scales seamlessly over available cores without having to manually fork multiple servers and handle inter process communication between them.</li>
-<li>Vert.x has a simple, asynchronous programming model for writing truly scalable non-blocking applications.</li>
-<li>Vert.x includes a distributed event bus that spans the client and server side so your applications components can communicate incredibly easily. The event bus even penetrates into in-browser JavaScript allowing you to create effortless so-called real-time web applications.</li>
-<li>Vert.x provides real power and simplicity, without being simplistic. No more sprawling xml configuration files.</li>
-<li>Vert.x includes a module system and public module repository, so you can easily re-use and share Vert.x modules with others.</li>
+<li>Vert.x provides primarily asynchronous APIs for writing truly scalable non-blocking applications</li>
+<li>Vert.x is polyglot. Developers write their components in JavaScript, Ruby, Groovy, Java or Python. Multiple programming languages can be used in a single application.</li>
+<li>Vert.x has a very simple concurrency model. Vert.x allows you to write all your code as single threaded, this greatly simplifies development.
+  (No more 'synchronized', 'volatile' or explicit locking).</li>
+<li>Vert.x includes a distributed event bus that spans the client and server side so your applications components can communicate incredibly easily.
+  The event bus even penetrates into in-browser JavaScript allowing you to create effortless so-called 'real-time' web applications.</li>
+<li>Vert.x is modular. It provides a simple yet powerful module system, and a public module repository to encourage an ecosystem of modules published by the community.</li>
+<li>Vert.x takes advantage of the JVM and scales seamlessly over available cores without having to manually fork multiple servers and handle inter process communication between them.</li>
+<li>Vert.x provides real power and simplicity, without being simplistic.</li>
 </ul>
  
-<h2>Why Eclipse?</h2> 
+<h2>Why Eclipse?</h2>
+
+<p>For the project to continue to flourish with a vibrant community it's important that the project is hosted in a neutral
+organisation where the aims of any one commercial entity cannot steer the project. We believe the project is owned by the
+community and it's up to the community, led by the project lead, to determine the course of the project.</p>
+<p>We also believe that good IP management as provided by Eclipse will be a good thing for Vert.x as we aim to get more
+use in large enterprises.</p>
+<p>TODO Say something here about Eclipse's large network of member organisations?</p>
+<p>TODO Say something about business friendly</p>
 
 <!-- 
 	Answer these two questions:	What value does this project bring to the Eclipse
@@ -115,7 +135,7 @@ Vert.x is the framework for the next generation of asynchronous, effortlessly sc
  -->
 
 <p>
-TODO
+
 </p>
 
 <h2>Initial Contribution</h2>
@@ -129,7 +149,28 @@ TODO
 	of community that exists around the code. Include a listing of third-party libraries 
 	and associated licenses.
  -->
- 
+
+<p>The code is written mainly in Java with smaller amounts of Ruby, Groovy, JavaScript and Python.</p>
+
+<p>There have been around 68 contributors during the course of the project. Most of the contributions were in the form
+of small pull requests.</p>
+<p>The largest contributor to the project is Tim Fox - whose copyright is owned by VMware</p>
+<p>For most larger contributions the SpringSource CLA should have be signed by the contributor. For small (few line) contributions,
+contributors weren't asked to sign a CLA.</p>
+<p>The code in the project is almost all licensed by VMware under the ASL 2.0. There a small number of exceptions including
+a public domain source file (org.vertx.java.core.http.impl.ws.Base64) and another licensed under the MIT license
+  (org.vertx.java.core.http.impl.cgbystrom.FlashPolicyHandler)</p>
+<p>There are a few files in the project which were taken from previous Red Hat projects (mainly in the websockets implementation),
+  also licensed under ASL 2.0</p>
+<p>Vert.x currently distributes the following third party libraries</p>
+<ul>
+  <li>Netty 3.5.9 final. License is ASL 2.0</li>
+  <li>Hazelcast 2.4.1. License is ASL 2.0</li>
+  <li>Jackson 1.9.4. License is ASL 2.0</li>
+  <li>Groovy 2.0.5. License is ASL 2.0</li>
+  <li>Mozilla Rhino 1.7R4. License is MPL 2.0</li>
+</ul>
+
 <h2>Legal Issues</h2>
 
 <!-- 
@@ -141,11 +182,13 @@ TODO
  -->
 
 <p>
-Talk about VMWare project history etc...
+The code is mainly licensed under the ASL 2.0. It would be preferable if we could continue with this license as we join
+  Eclipse.
 </p>
 
 <p>
-VMWare is transfering the existing trademark to the Eclipse Foundation.
+The 'Vert.x' trademark is currently owned by VMware. As part of joining the Eclipse Foundation VMware agrees to transfer
+  rights to the trademark to EF.
 </p>
  
 <h2>Committers</h2>
@@ -160,8 +203,10 @@ VMWare is transfering the existing trademark to the Eclipse Foundation.
 
 <ul>
         <li>Tim Fox, Red Hat (lead)</li>
-        <li>Somebody else, Affiliation</li>
+        <li>Stuart Williams, VMware</li>
 </ul>
+
+<p>TODO - any more?</p>
 
 <p>We welcome additional committers and contributions.</p>
 
